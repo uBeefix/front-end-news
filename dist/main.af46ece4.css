@@ -34,7 +34,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ol {
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
@@ -55,9 +57,13 @@ a {
 .hero {
   background-color: var(--indigo);
   padding: 20px 0;
+  margin-bottom: 40px;
   color: var(--white);
   text-align: center;
 }
+
+/* =====================
+* LOGO =============== */
 
 .logo {
   font-size: 34px;
@@ -65,3 +71,38 @@ a {
   font-weight: bold;
   font-family: Arial, serif;
 }
+
+/* =====================
+* NEWS =============== */
+
+.news-item {
+  border-bottom: 1px solid var(--gray_light);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.news-link {
+  color: var(--indigo);
+  font-family: Arial, serif;
+  font-size: 24px;
+}
+
+/* =====================
+* CONTAINER =============== */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
