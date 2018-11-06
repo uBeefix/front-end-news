@@ -111,6 +111,10 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).text('Liked!').closest('.news-item').addClass('is-liked');
   });
+  $('.js-add-link').on('click', function (event) {
+    event.preventDefault();
+    $('.js-form').toggleClass('is-visible');
+  });
 });
 },{}],"../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -139,7 +143,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59602" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49675" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

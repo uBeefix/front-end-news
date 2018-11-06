@@ -52,6 +52,7 @@ p {
 
 a {
   color: var(--pink);
+  transition: .2s ease-in-out;
 }
 
 a:active,
@@ -112,13 +113,6 @@ a:focus {
 }
 
 /* =====================
-* STATES =============== */
-
-.is-liked {
-  animation: flash 2s;
-}
-
-/* =====================
 * ANIMATION ============ */
 
 @keyframes flash {
@@ -130,6 +124,68 @@ a:focus {
     opacity: 1;
   }
 }
+
+/* =====================
+* FORM ================= */
+
+.form {
+  margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+}
+
+/* =====================
+* STATES =============== */
+
+.is-liked {
+  animation: flash 2s;
+}
+
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.form-label {
+  display: block; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  border: 1px solid var(--gray_light);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
