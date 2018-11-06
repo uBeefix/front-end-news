@@ -72,7 +72,7 @@ a:focus {
 }
 
 /* =====================
-* LOGO =============== */
+* LOGO ================= */
 
 .logo {
   font-size: 34px;
@@ -82,7 +82,7 @@ a:focus {
 }
 
 /* =====================
-* NEWS =============== */
+* NEWS ================= */
 
 .news-item {
   border-bottom: 1px solid var(--gray_light);
@@ -104,16 +104,32 @@ a:focus {
 }
 
 /* =====================
-* CONTAINER =============== */
+* CONTAINER ============ */
 
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
+/* =====================
+* STATES =============== */
 
+.is-liked {
+  animation: flash 2s;
+}
 
+/* =====================
+* ANIMATION ============ */
 
+@keyframes flash {
+  from, 50%, to {
+    opacity: 0;
+  }
+
+  25%, 75% {
+    opacity: 1;
+  }
+}
 
 
 
